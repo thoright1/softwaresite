@@ -6,33 +6,46 @@
   <title>Software Solutions - Home</title>
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8blC7R8g6+S9Yl+6YQ6D2fI5lP6w2wA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
 <!-- NAV -->
 <nav class="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Logo</a>
-    <ul class="nav-links">
-      <li><a href="about.html">About Us</a></li>
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Software Solutions</a>
+    <ul class="menu-items">
+      <li><a href="about-us.html">About Us</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="careers.html">Careers</a></li>
       <li><a href="contact.html">Contact Us</a></li>
       <li><a href="faqs.html">FAQs</a></li>
     </ul>
-    <a href="contact.html" class="btn btn-outline">Get a quote</a>
+    <a href="contact.html" class="btn btn-secondary">Get a quote</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-bg">
+    <video class="hero-bg-video" autoplay muted loop playsinline preload="metadata">
+      <source src="images/bg.cp.mp4" type="video/mp4" />
+    </video>
+  </div>
   <div class="hero-content">
-    <h1 class="hero-title">Lorem ipsum dolor sit amet</h1>
-    <h2 class="hero-subtitle">Lorem ipsum</h2>
-    <p class="hero-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.</p>
-    <a href="contact.html" class="btn btn-solid">Get a quote</a>
+    <h1 class="hero-title">Let’s build something great</h1>
+    <h2 class="hero-subtitle">End-to-end product engineering</h2>
+    <p class="hero-desc">We create bespoke software, web apps, and scalable digital platforms for startups and small-to-medium businesses that need a reliable technical partner.</p>
+    <p class="hero-desc">From MVP development and SaaS architecture to API integrations, automation services, CRM tools, and full-stack delivery, we build modern solutions tailored to your goals.</p>
+    <a href="contact.html" class="btn btn-primary">Get a quote</a>
+  </div>
+</section>
+
+<section class="section u-pt-0">
+  <div class="container">
+    <span class="section-label">Keywords</span>
+    <p class="section-desc">SaaS · Web apps · Bespoke software · Custom software · Mobile apps · Automation · CMS · IT solutions · API development · MVP development · CRM software · Front-end · Back-end · Full-stack</p>
   </div>
 </section>
 
@@ -42,29 +55,29 @@
     <div class="two-col">
       <div class="col-left">
         <span class="section-label">About Us</span>
-        <h2 class="section-heading">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h2>
-        <a href="about.html" class="btn btn-solid">Contact Us</a>
+        <h2 class="section-heading">Custom software, web apps, and IT solutions built around your goals.</h2>
+        <a href="about-us.html" class="btn btn-primary">Contact Us</a>
       </div>
-      <div class="col-right about-tabs">
-        <div class="about-tab">
-          <div class="icon-badge">Icons</div>
-          <h4>Lorem ipsum dolor sit</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+      <div class="col-right about-contents">
+        <div class="about-content">
+          <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h4>Discovery-first planning</h4>
+          <p>We align product goals, technical scope, and timelines before a single sprint starts.</p>
         </div>
-        <div class="about-tab">
-          <div class="icon-badge">Icons</div>
-          <h4>Lorem ipsum dolor sit</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+        <div class="about-content">
+          <div class="icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h4>User-centered UX</h4>
+          <p>Our design team turns requirements into accessible interfaces customers actually enjoy using.</p>
         </div>
-        <div class="about-tab">
-          <div class="icon-badge">Icons</div>
-          <h4>Lorem ipsum dolor sit</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+        <div class="about-content">
+          <div class="icon"><i class="fa-solid fa-code"></i></div>
+          <h4>Reliable engineering</h4>
+          <p>From APIs to frontend, we deliver clean, testable code built for long-term maintainability.</p>
         </div>
-        <div class="about-tab">
-          <div class="icon-badge">Icons</div>
-          <h4>Lorem ipsum dolor sit</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+        <div class="about-content">
+          <div class="icon"><i class="fa-solid fa-headset"></i></div>
+          <h4>Long-term partnership</h4>
+          <p>After launch, we monitor performance, fix issues quickly, and keep your roadmap moving.</p>
         </div>
       </div>
     </div>
@@ -77,78 +90,78 @@
     <div class="section-header two-col-header">
       <div>
         <span class="section-label">Services</span>
-        <h2 class="section-heading">Lorem ipsum dolor sit amet elit.</h2>
+        <h2 class="section-heading">Practical services to launch and scale digital products.</h2>
       </div>
       <div class="section-header-right">
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
-        <a href="services.html" class="btn btn-solid" style="margin-top:12px;display:inline-block;">All Services</a>
+        <p>We design, build, and support secure software products that help teams move faster.</p>
+        <a href="services.html" class="btn btn-primary u-mt-12 u-inline-block">All Services</a>
       </div>
     </div>
     <div class="cards-grid">
       <div class="card">
         <div class="card-top">
-          <h4>Lorem sit dolor</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur</p>
+          <h4>Product Strategy & Roadmapping</h4>
+          <p>Workshops, architecture planning, and milestone mapping to reduce delivery risk.</p>
         </div>
         <div class="card-divider"></div>
         <div class="card-bottom">
-          <span class="badge">Icons</span>
-          <a href="services.html" class="btn-read-more">Read More →</a>
+          <span class="badge">Consulting</span>
+          <a href="services.html" class="btn-more">Read More →</a>
         </div>
       </div>
       <div class="card">
         <div class="card-top">
-          <h4>Lorem sit dolor</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur</p>
+          <h4>Custom Web Platforms</h4>
+          <p>Responsive portals, dashboards, and SaaS products tailored to your operations.</p>
         </div>
         <div class="card-divider"></div>
         <div class="card-bottom">
-          <span class="badge">Icons</span>
-          <a href="services.html" class="btn-read-more">Read More →</a>
+          <span class="badge">Web Apps</span>
+          <a href="services.html" class="btn-more">Read More →</a>
         </div>
       </div>
       <div class="card">
         <div class="card-top">
-          <h4>Lorem sit dolor</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur</p>
+          <h4>Mobile App Development</h4>
+          <p>iOS and Android experiences with robust APIs and scalable cloud backends.</p>
         </div>
         <div class="card-divider"></div>
         <div class="card-bottom">
-          <span class="badge">Icons</span>
-          <a href="services.html" class="btn-read-more">Read More →</a>
+          <span class="badge">Mobile</span>
+          <a href="services.html" class="btn-more">Read More →</a>
         </div>
       </div>
       <div class="card">
         <div class="card-top">
-          <h4>Lorem sit dolor</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur</p>
+          <h4>AI Feature Integration</h4>
+          <p>Practical automation, assistants, and AI workflows embedded into existing products.</p>
         </div>
         <div class="card-divider"></div>
         <div class="card-bottom">
-          <span class="badge">Icons</span>
-          <a href="services.html" class="btn-read-more">Read More →</a>
+          <span class="badge">AI</span>
+          <a href="services.html" class="btn-more">Read More →</a>
         </div>
       </div>
       <div class="card">
         <div class="card-top">
-          <h4>Lorem sit dolor</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur</p>
+          <h4>Cloud Modernization</h4>
+          <p>Infrastructure, CI/CD, and performance tuning for secure and reliable deployments.</p>
         </div>
         <div class="card-divider"></div>
         <div class="card-bottom">
-          <span class="badge">Icons</span>
-          <a href="services.html" class="btn-read-more">Read More →</a>
+          <span class="badge">Cloud</span>
+          <a href="services.html" class="btn-more">Read More →</a>
         </div>
       </div>
       <div class="card">
         <div class="card-top">
-          <h4>Lorem sit dolor</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur</p>
+          <h4>Managed Support & Growth</h4>
+          <p>Ongoing maintenance, analytics, and iterative improvements post-launch.</p>
         </div>
         <div class="card-divider"></div>
         <div class="card-bottom">
-          <span class="badge">Icons</span>
-          <a href="services.html" class="btn-read-more">Read More →</a>
+          <span class="badge">Support</span>
+          <a href="services.html" class="btn-more">Read More →</a>
         </div>
       </div>
     </div>
@@ -161,18 +174,18 @@
     <div class="two-col">
       <div class="col-left">
         <span class="section-label">Why Choose Us</span>
-        <h2 class="section-heading">Lorem ipsum dolor sit amet elit.</h2>
-        <p class="section-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur.</p>
+        <h2 class="section-heading">Practical services to launch and scale digital products.</h2>
+        <p class="section-desc">We combine product strategy, design, and engineering to deliver measurable business outcomes.</p>
         <ul class="bullet-list">
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Senior engineers embedded directly with your team.</li>
+          <li>Transparent weekly delivery updates and planning.</li>
+          <li>Security and performance considered from day one.</li>
+          <li>Flexible engagement models for each stage of growth.</li>
         </ul>
-        <a href="contact.html" class="btn btn-solid" style="margin-top:16px;display:inline-block;">Contact Us</a>
+        <a href="contact.html" class="btn btn-primary u-mt-16 u-inline-block">Contact Us</a>
       </div>
       <div class="col-right">
-        <div class="placeholder-img large"></div>
+        <img class="content-image large" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80" alt="Team collaborating in office" />
       </div>
     </div>
   </div>
@@ -182,31 +195,31 @@
 <section class="cta-banner">
   <div class="cta-inner">
     <div>
-      <h3>Lorem ipsum dolor</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+      <h3>Let’s build something great</h3>
+      <p>We design, build, and support secure software products that help teams move faster.</p>
     </div>
-    <a href="contact.html" class="btn btn-outline">Get a quote</a>
+    <a href="contact.html" class="btn btn-secondary">Get a quote</a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <div class="footer-logo">Logo</div>
-      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet.</p>
+  <div class="footer-container">
+    <div class="footer-agency">
+      <div class="footer-logo">Software Solutions</div>
+      <p>We build dependable software products and support teams from idea to scale.</p>
       <div class="social-links">
-        <a href="#" class="social-icon">𝕏</a>
-        <a href="#" class="social-icon">IG</a>
-        <a href="#" class="social-icon">FB</a>
-        <a href="#" class="social-icon">in</a>
+        <a href="#" class="social-media-icons"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="social-media-icons"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-media-icons"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social-media-icons"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
     </div>
     <div class="footer-col">
       <h5>Company</h5>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about-us.html">About</a></li>
         <li><a href="careers.html">Careers</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
@@ -224,8 +237,8 @@
       <h5>Contact Us</h5>
       <p class="footer-contact-label">Call Us</p>
       <p>+44 07747301299</p>
-      <p class="footer-contact-label" style="margin-top:12px;">Send Email</p>
-      <p>support.###.co.uk</p>
+      <p class="footer-contact-label u-mt-12">Send Email</p>
+      <p>hello@softwaresolutions.com</p>
     </div>
   </div>
   <div class="footer-bottom">
@@ -238,5 +251,7 @@
   </div>
 </footer>
 
+
+<script src="js/script.js"></script>
 </body>
 </html>
