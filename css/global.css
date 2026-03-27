@@ -119,17 +119,17 @@ img {
   opacity: 0.8;
 }
 
-.btn-solid {
+.btn-primary {
   background: var(--btn-solid);
   color: #fff;
 }
 
-.btn-outline {
+.btn-secondary {
   background: var(--btn-outline);
   color: #000;
 }
 
-.btn-read-more {
+.btn-more {
   font-size: 11px;
   color: var(--text);
   background: var(--badge);
@@ -147,7 +147,7 @@ img {
   border-bottom: 1px solid var(--border);
 }
 
-.nav-inner {
+.nav-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 32px;
@@ -163,23 +163,23 @@ img {
   margin-right: auto;
 }
 
-.nav-links {
+.menu-items {
   display: flex;
   gap: 4px;
 }
 
-.nav-links a {
+.menu-items a {
   padding: 6px 10px;
   border-radius: 8px;
   font-size: 14px;
   transition: background 0.15s;
 }
 
-.nav-links a:hover {
+.menu-items a:hover {
   background: var(--surface);
 }
 
-.nav-links a.active {
+.menu-items a.active-page {
   font-weight: 600;
 }
 
@@ -331,7 +331,7 @@ img {
   color: var(--text-muted);
 }
 
-.projects-grid {
+.project-cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -344,7 +344,7 @@ img {
   overflow: hidden;
 }
 
-.project-card .proj-img {
+.project-card .project-image {
   width: 100%;
   height: 280px;
   background: #c7c7c7;
@@ -358,7 +358,7 @@ img {
   line-height: 1.55;
 }
 
-.faq-item {
+.faq-question {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -370,14 +370,31 @@ img {
   cursor: pointer;
 }
 
-.faq-item:hover {
+.faq-question:hover {
   background: var(--surface2);
 }
 
-.faq-item span {
+.faq-question span {
   font-size: 13px;
 }
 
+
+
+.faq-question.is-open {
+  background: var(--surface2);
+}
+
+.faq-answer {
+  margin: 0 0 12px;
+  padding: 0 16px 12px;
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.faq-answer.is-open {
+  display: block;
+}
 .faq-plus {
   width: 26px;
   height: 26px;
@@ -427,7 +444,7 @@ img {
   padding: 48px 0 0;
 }
 
-.footer-inner {
+.footer-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 32px 40px;
@@ -443,7 +460,7 @@ img {
   margin-bottom: 12px;
 }
 
-.footer-brand p {
+.footer-agency p {
   font-size: 11px;
   color: var(--text-muted);
   margin-bottom: 20px;
@@ -455,7 +472,7 @@ img {
   gap: 12px;
 }
 
-.social-icon {
+.social-media-icons {
   width: 28px;
   height: 28px;
   display: flex;
@@ -528,12 +545,56 @@ img {
 @media (max-width: 900px) {
   .two-col,
   .cards-grid,
-  .projects-grid,
-  .footer-inner {
+  .project-cards-grid,
+  .footer-container {
     grid-template-columns: 1fr;
   }
 
   .section-header.two-col-header {
     grid-template-columns: 1fr;
   }
+}
+
+
+/* ===== UTILITY CLASSES ===== */
+.u-pt-0 { padding-top: 0; }
+.u-pt-40 { padding-top: 40px; }
+.u-mt-12 { margin-top: 12px; }
+.u-mt-16 { margin-top: 16px; }
+.u-mt-24 { margin-top: 24px; }
+.u-mt-32 { margin-top: 32px; }
+.u-mb-12 { margin-bottom: 12px; }
+.u-mb-16 { margin-bottom: 16px; }
+.u-mb-24 { margin-bottom: 24px; }
+.u-mb-32 { margin-bottom: 32px; }
+.u-mb-40 { margin-bottom: 40px; }
+.u-mb-48 { margin-bottom: 48px; }
+.u-mt-16-mb-32 { margin-top: 16px; margin-bottom: 32px; }
+.u-inline-block { display: inline-block; }
+.u-inline-flex { display: inline-flex; }
+.u-align-center { align-items: center; }
+.u-gap-6 { gap: 6px; }
+.u-grid-two-gap-16 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.u-h-220 { height: 220px; }
+.u-h-280 { height: 280px; }
+.u-maxw-540 { max-width: 540px; }
+.u-maxw-560 { max-width: 560px; }
+.u-maxw-660 { max-width: 660px; }
+.u-maxw-960 { max-width: 960px; }
+.u-btn-compact { font-size: 12px; padding: 8px 16px; }
+.u-text-muted-10 { font-size: 10px; color: var(--text-muted); }
+.u-text-13-semibold-mb12 { font-size: 13px; font-weight: 600; margin-bottom: 12px; }
+.u-flex-col-gap-6 { display: flex; flex-direction: column; gap: 6px; }
+.u-faq-link-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+}
+.u-faq-link-row-last {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 12px;
 }
