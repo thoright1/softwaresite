@@ -1,0 +1,51 @@
+/* FAQs page specific styles */
+.faq-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 48px;
+}
+
+.faq-section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.faq-heading {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.faq-aside {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  height: fit-content;
+}
+
+.faq-aside-inner {
+  background: var(--surface2);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.faq-aside h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.faq-aside p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 900px) {
+  .faq-layout {
+    grid-template-columns: 1fr;
+  }
+}
