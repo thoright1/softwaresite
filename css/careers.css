@@ -1,0 +1,129 @@
+/* Careers page specific styles */
+.jobs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.job-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.job-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.job-card h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.job-type-badge {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+}
+
+.job-meta {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.job-meta span::after {
+  content: ' •';
+  margin-left: 6px;
+}
+
+.job-meta span:last-child::after {
+  content: '';
+}
+
+.job-card p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.job-card-divider {
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 16px;
+}
+
+.why-join-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.why-join-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.why-join-card .icon-badge {
+  margin-bottom: 16px;
+}
+
+.why-join-card h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.why-join-card p {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.app-process {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  margin-top: 32px;
+}
+
+.app-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.app-step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.step-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--badge);
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .jobs-grid,
+  .app-process,
+  .why-join-grid {
+    grid-template-columns: 1fr;
+  }
+}

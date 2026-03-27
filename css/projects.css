@@ -1,0 +1,33 @@
+/* Projects page specific styles */
+.project-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--surface);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.tags-filter {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.tag-btn {
+  padding: 5px 14px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  background: transparent;
+  color: var(--text);
+  transition: background 0.15s;
+}
+
+.tag-btn:hover,
+.tag-btn.active {
+  background: var(--surface);
+}
