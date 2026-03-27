@@ -1,5 +1,5 @@
 /* FAQs page specific styles */
-.faq-layout {
+.faq-container {
   display: grid;
   grid-template-columns: 1fr 360px;
   gap: 48px;
@@ -26,7 +26,7 @@
   height: fit-content;
 }
 
-.faq-aside-inner {
+.faq-aside-content {
   background: var(--surface2);
   border-radius: var(--radius);
   padding: 20px;
@@ -45,7 +45,7 @@
 }
 
 @media (max-width: 900px) {
-  .faq-layout {
+  .faq-container {
     grid-template-columns: 1fr;
   }
 }

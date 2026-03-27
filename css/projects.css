@@ -9,7 +9,7 @@
   font-size: 11px;
 }
 
-.tags-filter {
+.filter {
   display: flex;
   gap: 8px;
   margin-bottom: 32px;
@@ -28,6 +28,6 @@
 }
 
 .tag-btn:hover,
-.tag-btn.active {
+.tag-btn.active-page {
   background: var(--surface);
 }

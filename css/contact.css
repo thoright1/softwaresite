@@ -1,5 +1,5 @@
 /* Contact page specific styles */
-.contact-layout {
+.contact-container {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 64px;
@@ -17,14 +17,14 @@
   margin-bottom: 32px;
 }
 
-.contact-method {
+.contact-type {
   display: flex;
   align-items: flex-start;
   gap: 16px;
   margin-bottom: 24px;
 }
 
-.contact-method-icon {
+.contact-icon {
   width: 48px;
   height: 48px;
   background: var(--surface);
@@ -37,22 +37,22 @@
   flex-shrink: 0;
 }
 
-.contact-method-label {
+.contact-label {
   font-size: 11px;
   color: var(--text-muted);
 }
 
-.contact-method-value {
+.contact-details {
   font-size: 13px;
   font-weight: 500;
   margin-top: 4px;
 }
 
-.follow-us {
+.social-media {
   margin-top: 32px;
 }
 
-.follow-us p {
+.social-media p {
   font-size: 13px;
   margin-bottom: 12px;
 }
@@ -69,26 +69,26 @@
   margin-bottom: 24px;
 }
 
-.form-row {
+.form-first-feilds {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin-bottom: 16px;
 }
 
-.form-group {
+.form-feild {
   margin-bottom: 16px;
 }
 
-.form-group label {
+.form-feild label {
   display: block;
   font-size: 12px;
   color: var(--text-muted);
   margin-bottom: 6px;
 }
 
-.form-group input,
-.form-group textarea {
+.form-feild input,
+.form-feild textarea {
   width: 100%;
   background: var(--surface2);
   border: 1px solid var(--border);
@@ -101,19 +101,19 @@
   transition: border-color 0.15s;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.form-feild input:focus,
+.form-feild textarea:focus {
   border-color: #666;
 }
 
-.form-group textarea {
+.form-feild textarea {
   height: 100px;
   resize: vertical;
 }
 
 @media (max-width: 900px) {
-  .contact-layout,
-  .form-row {
+  .contact-container,
+  .form-first-feilds {
     grid-template-columns: 1fr;
   }
 }
