@@ -245,23 +245,19 @@ img {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.12));
 }
 
-.placeholder-img.large {
-  width: 100%;
+.content-image.large {
   height: 340px;
 }
 
-.placeholder-img.medium {
-  width: 100%;
+.content-image.medium {
   height: 200px;
 }
 
-.placeholder-img.small {
-  width: 100%;
+.content-image.small {
   height: 150px;
 }
 
-.placeholder-img.hero-ph {
-  width: 100%;
+.content-image.hero-ph {
   height: 244px;
 }
 
@@ -375,8 +371,9 @@ img {
 .project-card .project-image {
   width: 100%;
   height: 280px;
-  background: #c7c7c7;
   border-radius: var(--radius);
+  object-fit: cover;
+  display: block;
 }
 
 .project-card p {
@@ -461,7 +458,7 @@ img {
 
 .cta-inner p {
   font-size: 12px;
-  color: var(--text-muted);
+  color: #d9d9d9;
   max-width: 540px;
 }
 
