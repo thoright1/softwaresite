@@ -49,3 +49,36 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+.text-secondary-10 {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.text-small-semibold {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.column-gap-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.faq-topic-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+}
+
+.faq-topic-row-last {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 12px;
+}

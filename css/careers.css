@@ -127,3 +127,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+.job-apply-btn {
+  font-size: 12px;
+  padding: 8px 16px;
+}
